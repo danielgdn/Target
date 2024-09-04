@@ -3,7 +3,7 @@ const path = require('path')
 
 const lerFaturamento = () =>{
     try {
-      const caminhoJson = path.join(__dirname, 'faturamento.json');
+      const caminhoJson = path.join(__dirname, 'dados.json');
       const dados = fs.readFileSync(caminhoJson, 'utf-8'); 
       return JSON.parse(dados); 
     } catch (erro) {
